@@ -1,0 +1,187 @@
+.wrapper{
+  margin: 0 auto;
+  width: 900px;
+}
+body{
+  background-color: #f4f4f9;
+}
+
+
+.nav{
+  background-color: white;
+}
+.nav .wrapper{
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.nav .iconfont{
+  font-size: xx-large;
+}
+.nav ul{
+  display: flex;
+}
+.nav ul li{
+  margin: 0 20px;
+  line-height: 42px;
+}
+.nav ul li a{
+
+  font-size: medium;
+}
+.nav .serch{
+  margin: 10px;
+  background-color: #f3f5f7;
+  border-radius: 10px;
+}
+.nav .serch input{
+  border: none;
+  background-color: #f3f5f7;
+}
+.nav .serch a{
+  margin: 5px;
+}
+.nav .user{
+  height: 35px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+.nav .user img{
+  border-radius: 20px;
+}
+.nav .user span{
+  line-height: 35px;
+  margin-left: 10px;
+}
+
+
+.banner{
+  background-color: whitesmoke;
+}
+.banner .wrapper{
+  background-image: url(../img/6.jpg);
+  background-size: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+}
+.banner .left{
+  background-color: #025576;
+}
+.banner .left ul li{
+  margin: 15px;
+}
+.banner .left ul li a{
+  font-size: 18px;
+  color: rgba(230,230,230,0.8);
+}
+
+.banner .right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner .right .title{
+  width: 200px;
+  height: 230px;
+  background-color: #249bd4;
+  border-radius: 10px;
+}
+.banner .right .title h4{
+  font-weight: 500;
+  margin: 10px;
+}
+
+.banner .right .list{
+  padding: 2px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+}
+.banner .right .list dt{
+  margin-top: 5px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+.banner .right .list dd{
+  margin: 3px;
+  font-size: smaller;
+  border-bottom: 1px #f4f4f9 solid;
+}
+
+.recommend{
+  display: flex;
+  height: 60px;
+  background-color: #f3f5f7;
+  margin-top: 10px;
+  padding: 20px;
+  box-shadow: 0px 1px 2px 0px gainsboro;
+}
+.recommend ul{
+  flex: 1;
+  display: flex;
+}
+.recommend ul li{
+  margin: 0 10px;
+}
+
+.cards .head{
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.cards .body{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+.cards .body li{
+  background-color: white;
+
+  margin: 5px;
+}
+.cards .body li h4{
+  margin: 5px;
+  font-size: small;
+  text-align: center;
+  font-weight: 600;
+}
+.cards .body li p{
+  margin: 5px;
+  font-size: xx-small;
+}
+
+.footer{
+  background-color: white;
+  height: 250px;
+  margin-top: 60px;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer .right{
+  display: flex;
+}
+.footer strong{
+  font-size: xx-large;
+}
+.footer p{
+  margin-top: 20px;
+  font-size: xx-small;
+}
+.footer .right dl{
+  margin: 20px;
+}
+.footer dt{
+  font-size: medium;
+  font-weight: 500;
+}
+.footer dd{
+  font-weight: 200;
+  font-size: x-small;
+}
