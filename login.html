@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>欢迎登陆</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="./iconfont/iconfont.css">
+</head>
+<body>
+  <div class="head wrapper">
+    <div class="left">
+      <div class="logo"></div>
+      <h1><a href="#">橙子优品</a></h1>
+    </div>
+    <ul>
+      <li><h5 class="iconfont icon-service"> 品类齐全</h5></li>
+      <li><h5 class="iconfont icon-service"> 品类齐全</h5></li>
+      <li><h5 class="iconfont icon-service"> 品类齐全</h5></li>
+    </ul>
+
+
+  </div>
+  <div class="body">
+    <div class="wrapper">
+      <div class="input">
+        <h2>快速登录</h2>
+        <input type="text" placeholder="请输入账号" class="text1">
+        <input type="password" placeholder="请输入密码" class="text2">
+        <br>
+        <div class="line">
+          <input type="checkbox">
+          <p>我已阅读并同意</p><a href="">《用户协议》</a>
+        </div>
+        <button type="submit">登录</button>
+        <a href="">快速注册</a>
+      </div>
+    </div>
+  </div>
+  <div class="foot">
+
+    <div class="line"><p>联系电话：0934-8632888</p><p>联系电话：0934-8632888</p></div>
+    <div class="line"><p>©2014-2023 橙子优品版权所有</p><a href="">陇ICP备20002430号</a></div>
+
+  </div>
+  <script>
+    const submit = document.querySelector('button')
+    const checkbox = document.querySelector('.line input')
+    const account = document.querySelector('.text1')
+    const password = document.querySelector('.text2')
+    submit.addEventListener('click',function(){
+      if(checkbox.checked){
+        if(account.value === ''){
+         alert('请输入账号')       
+        }
+        else if(password.value === ''){
+         alert('请输入密码')       
+        }
+        else if(account.value == 'admin' && password.value == 123456){
+          alert('登录成功')       
+        }
+        else{
+         alert('密码错误')       
+
+        }
+      }
+      else{
+        alert('请确认阅读用户协议')
+      }
+    })
+  </script>
+</body>
+</html>
